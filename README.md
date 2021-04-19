@@ -1,5 +1,9 @@
 # BwcawPermitsApp
+An project to explore Angular, OpenLayers, Postgres/PostGIS, and Geoserver.
+The goal is for this map to allow users to explore Boundary Waters Canoe Area Wilderness entry point permit availability, and to aid in planning overnight paddle trips.
 
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
 ## Development server
