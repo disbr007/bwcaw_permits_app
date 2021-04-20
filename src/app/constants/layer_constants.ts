@@ -1,0 +1,1 @@
+export const ms_usfs_wilderness = 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer'

@@ -3,6 +3,10 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
+import {Image as ImageLayer} from 'ol/layer';
+import {ImageArcGISRest} from 'ol/source';
+
+import {ms_usfs_wilderness} from './constants/layer_constants';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +27,15 @@ export class AppComponent implements OnInit {
         new TileLayer({
           source: new OSM(),
         }),
+        new ImageLayer({
+          source: new ImageArcGISRest({
+            ratio: 1,
+            params: {
+              LAYERS: 'show:0'
+            },
+            url: ms_usfs_wilderness
+          })
+        })
       ],
       target: 'ol-map'
     });
